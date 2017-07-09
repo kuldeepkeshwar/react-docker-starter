@@ -16,7 +16,7 @@
   "dependencies": {
     "express": "^4.12.3",
     "morgan": "^1.5.2",
-    "webpack": "^1.8.11",
+    "webpack": "^3.1.0",
     "webpack-dev-middleware": "^1.0.11",
     "webpack-hot-middleware":"latest"
   },
