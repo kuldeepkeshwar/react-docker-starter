@@ -1,0 +1,26 @@
+{
+  "name": "react-docker-starter",
+  "version": "1.0.0",
+  "description": "dockerise your react application",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kuldeepkeshwar/react-docker-starter.git"
+  },
+  "author": "kuldeepkeshwar@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kuldeepkeshwar/react-docker-starter/issues"
+  },
+  "homepage": "https://github.com/kuldeepkeshwar/react-docker-starter#readme",
+  "dependencies": {
+    "express": "^4.12.3",
+    "morgan": "^1.5.2",
+    "webpack": "^1.8.11",
+    "webpack-dev-middleware": "^1.0.11",
+    "webpack-hot-middleware":"latest"
+  },
+  "scripts": {
+    "start:multientry": "WEBPACK_CONFIG=./webpack.config.multientry.js node server.js"
+  }
+}

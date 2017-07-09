@@ -1,0 +1,26 @@
+version: '2'
+
+services:
+  init:
+    build: .
+    command: npm install
+    volumes:
+      - .:/code
+      - dist:/code/dist
+      - node_modules:/code/node_modules
+  app:
+    depends_on:
+      - init
+    build: .
+    command: npm start
+    ports:
+      - 3000:1616
+    volumes:
+      - .:/code
+      - dist:/code/dist
+      - node_modules:/code/node_modules
+
+volumes:
+  node_modules:
+  dist:
+  
